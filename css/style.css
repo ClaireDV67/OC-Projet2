@@ -1,3 +1,111 @@
-body {
+/* Règles générales */
+* {
     font-family: 'Raleway', sans-serif;
+}
+
+body {
+    max-width: 1400px;
+    margin: auto;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Header, comprenant la navigation */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.logo {
+    width: 61px;
+    height: 19px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.menu__element {
+    padding-top: 30px;
+}
+
+.menu__element:hover {
+    color: #0065FC;
+    font-weight: 500;
+    border-top: 3px #0065FC solid;
+}
+
+/* Formulaire de recherche */
+main {
+    margin: 20px;
+    margin-top: 40px;
+}
+
+h1 {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex: row;
+}
+
+#search {
+    border-top: 1px #F2F2F2 solid;
+    border-bottom: 1px #F2F2F2 solid;
+    border-left: none;
+    border-right: none;
+    padding: 15px;
+}
+
+#search::placeholder {
+    font-weight: 700;
+    font-size: 1.3em;
+    color: black;
+}
+
+.form__element {
+    height: 49px;
+}
+
+.icone_location {
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    width: 50px;
+    position: relative;
+}
+
+.fa-location-dot {
+        position: absolute;
+        left: 20px;
+        top: 15px;
+}
+
+.form__button {
+    width: 132px;
+    height: 49px;
+    background: #0065FC;
+    color: white;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    font-weight: 700;
+    font-size: 1em;
 }

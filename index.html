@@ -8,12 +8,37 @@
         <!-- Police du site -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <!-- Icônes du site -->
         <script src="https://kit.fontawesome.com/b54cc8f050.js" crossorigin="anonymous"></script>
         <title>Booki</title>
     </head>
     <body>
-        
+        <!-- En-tête de la page -->
+        <header>
+            <img src="images/logo_mini.png" class="logo" alt="Logo de Booki" title="Logo de Booki">
+            <!-- Navigation, les liens menant à des ancres sur la page -->
+            <nav>
+                <ul class="menu">
+                    <li><a href="#hebergements" class="menu__element">Hébergements</a></li>
+                    <li><a href="#activites" class="menu__element">Activités</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Contenu principal -->
+        <main>
+            <!-- Formulaire de recherche -->
+            <section>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <div>En plein centre-ville ou en pleine nature</div>
+                <form method="get" action="">
+                    <div class="form__element icone_location">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <input class="form__element" type="search" name="ville" id="search" placeholder="Marseille, France">
+                    <button class="form__element form__button">Rechercher</button>
+                </form>
+            </section>
+        </main>
     </body>
 </html>
