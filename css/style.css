@@ -73,11 +73,14 @@ form {
     border-left: none;
     border-right: none;
     padding: 15px;
+    font-weight: 700;
+    font-size: 1.3em;
+    color: black;
 }
 
 #search::placeholder {
     font-weight: 700;
-    font-size: 1.3em;
+    font-size: 0.9em;
     color: black;
 }
 
@@ -94,18 +97,72 @@ form {
 }
 
 .fa-location-dot {
-        position: absolute;
+        position: relative;
         left: 20px;
         top: 15px;
 }
 
 .form__button {
     width: 132px;
-    height: 49px;
     background: #0065FC;
     color: white;
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
     font-weight: 700;
     font-size: 1em;
+    cursor: pointer;
+}
+
+/* Filtres */
+.filtre {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.filtres__liste {
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+}
+
+.filtre__button {
+    margin: 20px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+}
+
+.filtre__button:hover {
+    background-color: #DEEBFF;
+}
+
+.icone_filtre {
+    color: #0065FC;
+    padding: 0 15px 0 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icone_info {
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.fa-info {
+    color: #0065FC;
+    position: relative;
+    left: 10px;
+    top: 2px;
 }
