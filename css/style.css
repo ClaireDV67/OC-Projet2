@@ -19,6 +19,10 @@ li {
     list-style-type: none;
 }
 
+ul {
+    padding: 0;
+}
+
 /* Header, comprenant la navigation */
 header {
     display: flex;
@@ -50,17 +54,22 @@ header {
     border-top: 3px #0065FC solid;
 }
 
-/* Formulaire de recherche */
-main {
+/* Règles générales pour les différentes sections et main */
+section {
     margin: 20px;
+}
+
+main {
     margin-top: 40px;
 }
 
+/* Titre principal */
 h1 {
     font-size: 1.4em;
     margin-bottom: 5px;
 }
 
+/* Formulaire de recherche */
 form {
     margin-top: 20px;
     display: flex;
@@ -82,6 +91,7 @@ form {
     font-weight: 700;
     font-size: 0.9em;
     color: black;
+    opacity: 1;
 }
 
 .form__element {
@@ -127,6 +137,7 @@ form {
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 1em;
+    margin-left: 10px;
 }
 
 .filtre__button {
@@ -169,46 +180,181 @@ form {
 }
 
 /* Card */
-#hebergements {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background: #FFFFFF;
     border-radius: 20px;
-    width: 246px;
-  }
+    margin-bottom: 20px;
+}
   
-  .card__img {
+.card__img {
     border: 5px solid #FFFFFF;
+    object-fit: cover;
+}
+
+.container__element {
+    margin: 3px;
+    font-size: 0.9em;
+}
+
+h3 {
+    margin: 1px;
+}
+
+h3, span {
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.fa-star {
+    color: #0065FC;
+}
+
+.star_opacity {
+    opacity: 0.1;
+}
+
+/* Card hébergement */
+.card--hebergements {
+    width: 246px;
+}
+
+.card__img--hebergements {
     border-radius: 20px 20px 0px 0px;
     height: 124px;
     width: 96%;
-    object-fit: cover;
-  }
+}
 
-  .element__container {
-    margin: 3px;
-    font-size: 0.9em;
-  }
+.container__card--hebergements {
+    padding: 0 0 7px 15px;
+}
 
-  .container {
-    padding: 0 0 5px 15px;
-  }
+/* Card populaire */
+.card__img--populaires {
+    border-radius: 20px 0px 0px 20px;
+    height: 144px;
+    width: 40%;
+}
 
-  h3, span {
+.card--populaires {
+    display: flex;
+    flex-direction: row;
+    width: 343px;
+}
+
+.container__card--populaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0 7px 15px;
+}
+
+/* Conteneurs hébergements et populaires */
+.container--hebergements_populaires {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin: 10px 0 30px 15px;
     font-weight: 700;
-    font-size: 1em;
-  }
+}
 
-  .fa-star {
+/* Conteneur cards hébergements */
+#hebergements {
+    width: 65%;
+}
+
+.container__cards--hebergements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-bottom: 10px;
+}
+
+.component {
+    font-weight: 700;
+    margin: 30px 0 0 15px;
+}
+
+/* Conteneur cards populaires */
+#populaires {
+    width: 30%;
+}
+
+.populaires__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.fa-chart-line {
+    margin-right: 20px;
     color: #0065FC;
-  }
+}
 
-  .star_opacity {
-    opacity: 0.1;
-  }
+.container__cards--populaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Card activité */
+.card--activites {
+    width: 300px;
+}
+
+.card__img--activites {
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    height: 388px;
+    width: 100%;
+}
+
+.activites__title {
+    padding: 10px 0 10px 20px;
+}
+
+/* Conteneur cards activités */
+.container__cards--activites {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Footer */
+footer {
+    background-color: #F2F2F2;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 60px;
+    padding-bottom: 50px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.container__footer {
+    width: 33%;
+}
+
+.footer__element {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
