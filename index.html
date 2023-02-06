@@ -20,8 +20,8 @@
             <!-- Navigation, les liens menant à des ancres sur la page -->
             <nav>
                 <ul class="menu">
-                    <li><a href="#hebergements" class="menu__element">Hébergements</a></li>
-                    <li><a href="#activites" class="menu__element">Activités</a></li>
+                    <li class="menu__element"><a href="#hebergements" class="menu__lien">Hébergements</a></li>
+                    <li class="menu__element"><a href="#activites" class="menu__lien">Activités</a></li>
                 </ul>
             </nav>
         </header>
@@ -36,7 +36,7 @@
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
                     <input class="form__element" type="search" name="ville" id="search" placeholder="Marseille, France">
-                    <button class="form__element form__button">Rechercher</button>
+                    <button class="form__element form__button"><p class="search__button">Rechercher</p><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <div class="filtre">
                     <div>Filtres</div>
@@ -56,67 +56,73 @@
                         <i class="fa-solid fa-chart-line fa-lg"></i>
                     </div>
                     <div class="container__cards--populaires">
-                        <a href="#">
-                            <div class="card card--populaires">
-                                <img class="card__img card__img--populaires" src="./images/hotel_soleil_matin.jpg" alt="Hôtel Le soleil du matin" title="Hôtel Le soleil du matin">
-                                <div class="container__card--populaires">
-                                    <div>
-                                        <h3>Hôtel Le soleil du matin</h3>
-                                        <p class="container__element">Nuit à partir de 128<span>€</span></p>
-                                    </div>
-                                    <div class="container__element">
-                                        <i class="fa-solid fa-star fa-sm"></i>
-                                        <i class="fa-solid fa-star fa-sm"></i>
-                                        <i class="fa-solid fa-star fa-sm"></i>
-                                        <i class="fa-solid fa-star fa-sm"></i>
-                                        <i class="fa-solid fa-star fa-sm star_opacity"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="card card--populaires">
-                                <img class="card__img card__img--populaires" src="./images/chambres_hotes_coeur_eau.jpg" alt="Chambres d'hôtes Au cœur de l'eau" title="Chambres d'hôtes Au cœur de l'eau">
-                                <div class="container__card--populaires">
-                                    <div>
-                                        <h3>Chambres d'hôtes Au cœur de l'eau</h3>
-                                        <p class="container__element">Nuit à partir de 71<span>€</span></p>
-                                    </div>
-                                    <div class="container__element">
-                                        <i class="fa-solid fa-star fa-sm"></i>
-                                        <i class="fa-solid fa-star fa-sm"></i>
-                                        <i class="fa-solid fa-star fa-sm"></i>
-                                        <i class="fa-solid fa-star fa-sm"></i>
-                                        <i class="fa-solid fa-star fa-sm star_opacity"></i>
+                        <div class="card card--populaires">
+                            <a href="#">
+                                <div class="card-flex--populaires">
+                                    <img class="card__img card__img--populaires" src="./images/hotel_soleil_matin.jpg" alt="Hôtel Le soleil du matin" title="Hôtel Le soleil du matin">
+                                    <div class="container__card--populaires">
+                                        <div>
+                                            <h3>Hôtel Le soleil du matin</h3>
+                                            <p class="container__element">Nuit à partir de 128<span>€</span></p>
+                                        </div>
+                                        <div class="container__element">
+                                            <i class="fa-solid fa-star fa-sm"></i>
+                                            <i class="fa-solid fa-star fa-sm"></i>
+                                            <i class="fa-solid fa-star fa-sm"></i>
+                                            <i class="fa-solid fa-star fa-sm"></i>
+                                            <i class="fa-solid fa-star fa-sm star_opacity"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="card card--populaires">
-                                <img class="card__img card__img--populaires" src="./images/hotel_bleu_blanc.jpg" alt="Hôtel Bleu et Blanc" title="Hôtel Bleu et Blanc">
-                                <div class="container__card--populaires">
-                                    <div>
-                                        <h3>Hôtel Bleu et Blanc</h3>
-                                        <p class="container__element">Nuit à partir de 68<span>€</span></p>
-                                    </div>
-                                    <div class="container__element">
-                                        <i class="fa-solid fa-star fa-sm"></i>
-                                        <i class="fa-solid fa-star fa-sm"></i>
-                                        <i class="fa-solid fa-star fa-sm"></i>
-                                        <i class="fa-solid fa-star fa-sm"></i>
-                                        <i class="fa-solid fa-star fa-sm star_opacity"></i>
+                            </a>
+                        </div>
+                        <div class="card card--populaires">
+                            <a href="#">
+                                <div class="card-flex--populaires">
+                                    <img class="card__img card__img--populaires" src="./images/chambres_hotes_coeur_eau.jpg" alt="Chambres d'hôtes Au cœur de l'eau" title="Chambres d'hôtes Au cœur de l'eau">
+                                    <div class="container__card--populaires">
+                                        <div>
+                                            <h3>Chambres d'hôtes Au cœur de l'eau</h3>
+                                            <p class="container__element">Nuit à partir de 71<span>€</span></p>
+                                        </div>
+                                        <div class="container__element">
+                                            <i class="fa-solid fa-star fa-sm"></i>
+                                            <i class="fa-solid fa-star fa-sm"></i>
+                                            <i class="fa-solid fa-star fa-sm"></i>
+                                            <i class="fa-solid fa-star fa-sm"></i>
+                                            <i class="fa-solid fa-star fa-sm star_opacity"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+                        <div class="card card--populaires">
+                            <a href="#">
+                                <div class="card-flex--populaires">
+                                    <img class="card__img card__img--populaires" src="./images/hotel_bleu_blanc.jpg" alt="Hôtel Bleu et Blanc" title="Hôtel Bleu et Blanc">
+                                    <div class="container__card--populaires">
+                                        <div>
+                                            <h3>Hôtel Bleu et Blanc</h3>
+                                            <p class="container__element">Nuit à partir de 68<span>€</span></p>
+                                        </div>
+                                        <div class="container__element">
+                                            <i class="fa-solid fa-star fa-sm"></i>
+                                            <i class="fa-solid fa-star fa-sm"></i>
+                                            <i class="fa-solid fa-star fa-sm"></i>
+                                            <i class="fa-solid fa-star fa-sm"></i>
+                                            <i class="fa-solid fa-star fa-sm star_opacity"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </section>
                 <section id="hebergements" class="container">
                     <h2>Hébergements à Marseille</h2>
                     <div class="container__cards--hebergements">
-                        <a href="#">
-                            <div class="card card--hebergements">
+                        <div class="card card--hebergements">
+                            <a href="#">
                                 <img class="card__img card__img--hebergements" src="./images/auberge_canebiere.jpg" alt="Auberge La Canebière" title="Auberge La Canebière">
                                 <div class="container__card--hebergements">
                                     <h3>Auberge La Canebière</h3>
@@ -129,10 +135,10 @@
                                         <i class="fa-solid fa-star fa-sm star_opacity"></i>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="card card--hebergements">
+                            </a>
+                        </div>
+                        <div class="card card--hebergements">
+                            <a href="#">
                                 <img class="card__img card__img--hebergements" src="./images/hotel_port.jpg" alt="Hôtel du port" title="Hôtel du port">
                                 <div class="container__card--hebergements">
                                     <h3>Hôtel du port</h3>
@@ -145,10 +151,10 @@
                                         <i class="fa-solid fa-star fa-sm star_opacity"></i>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="card card--hebergements">
+                            </a>
+                        </div>
+                        <div class="card card--hebergements">
+                            <a href="#">
                                 <img class="card__img card__img--hebergements" src="./images/hotel_mouettes.jpg" alt="Hôtel Les mouettes" title="Hôtel Les mouettes">
                                 <div class="container__card--hebergements">
                                     <h3>Hôtel Les mouettes</h3>
@@ -161,10 +167,10 @@
                                         <i class="fa-solid fa-star fa-sm star_opacity"></i>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="card card--hebergements">
+                            </a>
+                        </div>
+                        <div class="card card--hebergements">
+                            <a href="#">
                                 <img class="card__img card__img--hebergements" src="./images/hotel_mer.jpg" alt="Hôtel de la mer" title="Hôtel de la mer">
                                 <div class="container__card--hebergements">
                                     <h3>Hôtel de la mer</h3>
@@ -177,10 +183,10 @@
                                         <i class="fa-solid fa-star fa-sm star_opacity"></i>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="card card--hebergements">
+                            </a>
+                        </div>
+                        <div class="card card--hebergements">
+                            <a href="#">
                                 <img class="card__img card__img--hebergements" src="./images/auberge_panier.jpg" alt="Auberge Le Panier" title="Auberge Le Panier">
                                 <div class="container__card--hebergements">
                                     <h3>Auberge Le Panier</h3>
@@ -193,10 +199,10 @@
                                         <i class="fa-solid fa-star fa-sm star_opacity"></i>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="card card--hebergements">
+                            </a>
+                        </div>
+                        <div class="card card--hebergements">
+                            <a href="#">
                                 <img class="card__img card__img--hebergements" src="./images/hotel_amina.jpg" alt="Hôtel Chez Amina" title="Hôtel Chez Amina">
                                 <div class="container__card--hebergements">
                                     <h3>Hôtel Chez Amina</h3>
@@ -209,8 +215,8 @@
                                         <i class="fa-solid fa-star fa-sm star_opacity"></i>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                     <p class="component"><a href="#">Afficher plus</a></p>
                 </section>
@@ -218,30 +224,30 @@
             <section id="activites" class="container__activites">
                 <h2>Activités à Marseille</h2>
                 <div class="container__cards--activites">
-                    <a href="#">
-                        <div class="card card--activites">
+                    <div class="card card--activites">
+                        <a href="#">
                             <img class="card__img--activites" src="./images/vieux-port.jpg" alt="Vieux-Port" title="Vieux-Port">
                             <h3 class="activites__title">Vieux-Port</h3>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="card card--activites">
+                        </a>
+                    </div>
+                    <div class="card card--activites">
+                        <a href="#">
                             <img class="card__img--activites" src="./images/fort_pomegues.jpg" alt="Fort de Pomègues" title="Fort de Pomègues">
                             <h3 class="activites__title">Fort de Pomègues</h3>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="card card--activites">
+                        </a>
+                    </div>
+                    <div class="card card--activites">
+                        <a href="#">
                             <img class="card__img--activites" src="./images/parc_national_calanques.jpg" alt="Parc national des Calanques" title="Parc national des Calanques">
                             <h3 class="activites__title">Parc national des Calanques</h3>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="card card--activites">
+                        </a>
+                    </div>
+                    <div class="card card--activites">
+                        <a href="#">
                             <img class="card__img--activites" src="./images/notre-dame-de-la-garde.jpg" alt="Notre-Dame-de-la-Garde" title="Notre-Dame-de-la-Garde">
                             <h3 class="activites__title">Notre-Dame-de-la-Garde</h3>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </section>
         </main>
